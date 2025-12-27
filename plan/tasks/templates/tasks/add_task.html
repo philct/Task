@@ -1,0 +1,13 @@
+{% extends "tasks/master.html" %}
+
+{% block Title %} Add-Task {% endblock Title %}
+
+{% block content %}
+    <h1>Create a Task</h1>
+    <form action="{% url 'tasks:add_task' %}" method='post'>
+        {{ form }}
+        <input type="Submit">
+    </form>
+
+    <a href="{% url 'tasks:index' %}"> All Tasks </a>
+{% endblock content %}
