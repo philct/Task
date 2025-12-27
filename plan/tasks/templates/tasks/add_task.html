@@ -5,6 +5,7 @@
 {% block content %}
     <h1>Create a Task</h1>
     <form action="{% url 'tasks:add_task' %}" method='post'>
+        {% csrf_token %}
         {{ form }}
         <input type="Submit">
     </form>
