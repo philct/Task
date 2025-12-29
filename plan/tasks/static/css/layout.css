@@ -1,0 +1,100 @@
+body {
+    /* Background setup */
+    background-image: url("background_image2.jpg"); 
+    background-color: darkgray; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+    /* Layout fix: This centers your 'container' on the screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Use 100vh to cover the full screen height */
+    margin: 0;
+    padding-top: 50px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add a container class to wrap your form/list in a white box */
+.container {
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency looks nice with bg images */
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+/* Target the input specifically to stop it from being "huge" */
+input[type="text"] {
+    width: 100%;
+    height: 40px;          /* Specific height for a slim look */
+    padding: 0 12px;       /* Horizontal padding only */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #fff;
+    border-left: 5px solid #007bff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    display: block; /* Changed to block for easier centering */
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}

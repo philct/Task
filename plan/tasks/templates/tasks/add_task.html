@@ -7,8 +7,10 @@
     <form action="{% url 'tasks:add_task' %}" method='post'>
         {% csrf_token %}
         {{ form }}
-        <input type="Submit">
+        <button type="Submit" >
+            Submit
+        </button>
     </form>
 
-    <a href="{% url 'tasks:index' %}"> All Tasks </a>
+    <a href="{% url 'tasks:index' %}" class="back-link"> All Tasks </a>
 {% endblock content %}
